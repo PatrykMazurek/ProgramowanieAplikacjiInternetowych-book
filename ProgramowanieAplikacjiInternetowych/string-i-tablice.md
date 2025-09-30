@@ -107,13 +107,17 @@ System.out.println(number2D[1][2]);
 ### Zadania
 
 1. Przekształć podany łańcuch "Java to `wspaniały` język" na "Java to `najlepszy` język", korzystając z metody pod-łańcuchów.
-2. poproś użytkowanika o podanie całego zdanie (np. „`Ala ma kota, kot ma Ale`”), a następnie:
+2. poproś użytkownika o podanie całego zdanie (np. „`Ala ma kota, kot ma Ale`”), a następnie:
    * podziel je na słowa, używając `String.split()`
    * zapisz słowa do tablicy `String[]`
    * policz ile razy wprowadzony został każdy wyraz i wyświetl tą informację
 3.
 4. Korzystając z StringBuilder: Połącz wyrazy wprowadzone przez użytkownika w pętli w jeden łańcuch znakowy
-5.
+5. Stwórz obiekt StringBuilder na podstawie tekstu tekstu podanego przez użytkownika, następnie wykonaj: (wykonaj kolejno)
+   1. Odwróć cały tekst (`reverse()`).
+   2. Wstaw na początku frazę `"START-"`.
+   3. Usuń wszystkie znaki od 3. do 6. indeksu (włącznie z 3., ale przed 6.).
+   4. Zamień znaki od 2. do 5. na frazę `"XYZ"`.
 6. Przeprowadź _mikro-benchmark_ w kodzie aby sprawdzić różnice w czasie dopisywania 100 000 razy "X" do startowego pustego tekstu za pomocą wzoru `text = text + "X";`
    1. wykorzystaj zwykły `+`
    2. wykorzystaj StringBuilder i append
