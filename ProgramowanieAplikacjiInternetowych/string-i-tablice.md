@@ -111,15 +111,20 @@ System.out.println(number2D[1][2]);
    * podziel je na słowa, używając `String.split()`
    * zapisz słowa do tablicy `String[]`
    * policz ile razy wprowadzony został każdy wyraz i wyświetl tą informację
-3.
-4. Korzystając z StringBuilder: Połącz wyrazy wprowadzone przez użytkownika w pętli w jeden łańcuch znakowy
-5. Stwórz obiekt StringBuilder na podstawie tekstu tekstu podanego przez użytkownika, następnie wykonaj: (wykonaj kolejno)
+3. Korzystając z StringBuilder: Połącz wyrazy wprowadzone przez użytkownika w pętli w jeden łańcuch znakowy
+4. Stwórz obiekt StringBuilder na podstawie tekstu tekstu podanego przez użytkownika, następnie wykonaj: (wykonaj kolejno)
    1. Odwróć cały tekst (`reverse()`).
    2. Wstaw na początku frazę `"START-"`.
    3. Usuń wszystkie znaki od 3. do 6. indeksu (włącznie z 3., ale przed 6.).
    4. Zamień znaki od 2. do 5. na frazę `"XYZ"`.
-6. Przeprowadź _mikro-benchmark_ w kodzie aby sprawdzić różnice w czasie dopisywania 100 000 razy "X" do startowego pustego tekstu za pomocą wzoru `text = text + "X";`
+5. Przeprowadź _mikro-benchmark_ w kodzie aby sprawdzić różnice w czasie dopisywania 100 000 razy "X" do startowego pustego tekstu za pomocą wzoru `text = text + "X";`
    1. wykorzystaj zwykły `+`
    2. wykorzystaj StringBuilder i append
    3. wyświetl czas trwania zapisu, możesz skorzystać z `Long czas = System.nanoTime()`
-7. Napisz program który wypisze wszystkie samogłoski i ich pozycję w dowolnym łańcuchu znakowym wprowadzonym przez użytkownika
+6. Napisz program który wypisze wszystkie samogłoski i ich pozycję w dowolnym łańcuchu znakowym wprowadzonym przez użytkownika
+7. Napisz program, który w 10-elementowej tablicy jednowymiarowej umieści liczby od 9 do 0 i wypisze je na ekranie.
+8. Napisz program, który utworzy 10-elementową tablicę liczb całkowitych i wypełni ją wartościami losowymi z przedziału {-20, …, 20} oraz:
+   * wyznaczy najmniejszy i największy element w tablicy
+   * wyznaczy średnią arytmetyczną elementów w tablicy
+   * wyznaczy ile elementów jest mniejszych, a ile większych od średniej
+   * wyznaczy ile razy każda liczb powtarza się w tablicy
