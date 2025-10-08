@@ -153,11 +153,4 @@ public static void main(String[] args) {
    * przygotuj setter _setNewAddress(HomeAddress newAddress)_ który pozwoli na zmodyfikowanie adresu.
    * przygotuj metodę _raiseSalary(Double byPercent)_ która pozwoli na zwiększenie **salary** o _p%_.
    * W pliku Main.java stwórz tablicę pracowników (min. 3) i uzupełnij dane, następnie wyświetl informację o wszystkich pracownikach. Zwiększ ich wypłatę i następnie wyświetl ponownie informacje o nich.
-4. Dodaj do klasy _Employee_ dodatkowy konstruktor, z domyślną wartością dla **salary**.
-5.  \*Bibliotek potrzebuje prostego programu do zarządzania książkami i czytelnikami. Twoim zadanie jest napisać dwie klasy, które będą ze sobą współpracować.
-
-    1.  Książka opisuje pojedynczą książkę. i posiada strukturę:
-
-        **Pola:**
-
-    &#x20;
+4. Dodaj do klasy _Employee_ dodatkowy konstruktor, z domyślną wartością dla **salary**.&#x20;
