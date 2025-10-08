@@ -1,6 +1,6 @@
-# Obiekty i klasy
+# Obiekty i Klasy
 
-## Teoria&#x20;
+## Teoria
 
 Rozdział 4 - Podstawowe elementy języka Java
 
@@ -10,7 +10,7 @@ W języku **Java** klasy stanowią podstawowy budulec programów obiektowych. Kl
 
 Java wspiera programowanie obiektowe w pełni, dlatego klasy mogą korzystać z takich mechanizmów jak dziedziczenie, enkapsulacja czy polimorfizm. Pozwala to budować rozbudowane systemy, które są czytelne, łatwiejsze w utrzymaniu i rozszerzalne. Programista może zdefiniować własne klasy, a także wykorzystywać gotowe klasy dostępne w bogatej bibliotece standardowej Javy.
 
-Deklaracja klasy  Person
+Deklaracja klasy Person
 
 <pre class="language-java"><code class="lang-java"><strong>public class Person {
 </strong>    // Pola (atrybuty)
@@ -19,7 +19,7 @@ Deklaracja klasy  Person
 }
 </code></pre>
 
-Aby stworze nowy obiekt typu Person należy użyć słowa kluczowego new, Powoduje to wywołanie konstruktora na obiekcie Person. Jeżeli nie zdefiniujemy konstruktora w klasie Person środowisko Java dostarczy automatycznie konstruktor bez argumentowy.&#x20;
+Aby stworze nowy obiekt typu Person należy użyć słowa kluczowego new, Powoduje to wywołanie konstruktora na obiekcie Person. Jeżeli nie zdefiniujemy konstruktora w klasie Person środowisko Java dostarczy automatycznie konstruktor bez argumentowy.
 
 ```java
 public class Main {
@@ -120,8 +120,6 @@ public class Main {
 
 Metoda **`toString()`** w Javie służy do zwracania tekstowej reprezentacji obiektu. Domyślnie każda klasa dziedziczy ją z klasy bazowej `Object`, a jej wynik to zazwyczaj nazwa klasy i adres w pamięci (np. `Person@6f2b958e`). W praktyce jednak bardzo często się ją **nadpisuje (override)**, aby zwracała czytelną i przydatną informację o obiekcie, np. wartości jego pól. Dzięki temu można łatwiej debugować program albo prezentować obiekty użytkownikowi w zrozumiałej formie.
 
-
-
 ```java
 public class Person {
     private String name;
@@ -137,7 +135,7 @@ public class Person {
 }
 ```
 
-Zastosowanie&#x20;
+Zastosowanie
 
 ```java
 public static void main(String[] args) {
@@ -147,3 +145,19 @@ public static void main(String[] args) {
 ```
 
 ### Zadania
+
+1. Utwórz klasę _Student_ reprezentującą człowieka. _Student_ musi posiadać takie pola instancji jak **age**, **name** i **height**. Klasa powinna zawierać jeden pusty konstruktor oraz drugi wymagający podania wszystkich pól. Należy zastosować zasady hermetyzacji. W pliku Main.java stwórz nową instancję klasy używając każdego konstruktora.
+2. Utwórz klasę _StringUtils_ wraz z metodą **Boolean isAnagram(String s1, String s2)** sprawdzającą czy łańcuch s1 jest anagramem s2. W pliku Main.java utwórz jedną instancję obiektu StringUtils, a następnie wywołaj trzykrotnie metodę _isAnagram()_ dla różnych stringów. _Anagram jest to wyraz lub wyrażenie powstałe przez przestawienie liter innego wyrazu lub wyrażenia_
+3. Utwórz klasę _Employee_ reprezentującą pracownika oraz klasę _HomeAddress_. _Employee_ musi posiadać prywatne pola jak: **name**, **salary**, **hireDate** i **homeAddress**. Inicjalizacja pól powinna odbywać się jako argumenty przekazane w konstruktorze.
+   * przygotuj getter _getInfo()_ który zwróci informację o pracowniku wraz z jego adresem.
+   * przygotuj setter _setNewAddress(HomeAddress newAddress)_ który pozwoli na zmodyfikowanie adresu.
+   * przygotuj metodę _raiseSalary(Double byPercent)_ która pozwoli na zwiększenie **salary** o _p%_.
+   * W pliku Main.java stwórz tablicę pracowników (min. 3) i uzupełnij dane, następnie wyświetl informację o wszystkich pracownikach. Zwiększ ich wypłatę i następnie wyświetl ponownie informacje o nich.
+4. Dodaj do klasy _Employee_ dodatkowy konstruktor, z domyślną wartością dla **salary**.
+5.  \*Bibliotek potrzebuje prostego programu do zarządzania książkami i czytelnikami. Twoim zadanie jest napisać dwie klasy, które będą ze sobą współpracować.
+
+    1.  Książka opisuje pojedynczą książkę. i posiada strukturę:
+
+        **Pola:**
+
+    &#x20;
