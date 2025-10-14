@@ -154,3 +154,19 @@ public static void main(String[] args) {
    * przygotuj metodę _raiseSalary(Double byPercent)_ która pozwoli na zwiększenie **salary** o _p%_.
    * W pliku Main.java stwórz tablicę pracowników (min. 3) i uzupełnij dane, następnie wyświetl informację o wszystkich pracownikach. Zwiększ ich wypłatę i następnie wyświetl ponownie informacje o nich.
 4. Dodaj do klasy _Employee_ dodatkowy konstruktor, z domyślną wartością dla **salary**.&#x20;
+5. Bibliotek potrzebuje prostego programu do zarządzania książkami i czytelnikami. Twoim zadanie jest napisać dwie klasy `Ksiazka` i `Czytelnik`, poniżej przedstawiamy struktury każdej z klasy.&#x20;
+
+* Klasa Książka opisuje pojedynczą książkę. i posiada strukturę:&#x20;
+  * Pola: `tytul` (typ String), `autor` (typ String), `czyWypozyczona`(typ boolean).&#x20;
+  * Konstruktor argumentowy ustawiający tytuł i autora oraz ustawiający wartość domyślną dla `czyWypozyczona = false`&#x20;
+  * Metody: getter(), setter() - dla podstawowych pól. `wypozycz()` – ustawia czyWypozyczona = true. `zwroc()` – ustawia czyWypozyczona = false. `toString()` – zwraca informacje o książce w formacie np. "Wiedźmin (Andrzej Sapkowski) – dostępna".&#x20;
+* Klasa Czytelnik opisuje pojedynczego czytelnika i posiada następującą strukturę&#x20;
+  * Pola: `imie` (typu String), `nazwisko` (typu String), `wyporzyczoneKsiazki` (tablica 5-cio elementowa).
+  * Metody: getter(), settery() - metody dla pozostałych pól .
+  * Konstruktor argumentowy ustawiający imie i nazwisko czytelnika
+
+Metody:
+
+* wypozyczKsiazke(Ksiazka k) - Sprawdza, czy książka jest dostępna (czyWypozyczona == false). Jeśli tak → przypisuje ją do wypozyczonaKsiazka i wywołuje k.wypozycz(). Jeśli nie → wyświetla komunikat "Książka \<tytuł> jest już wypożyczona."
+* zwrocKsiazke() Wywołuje zwroc() na książce, Ustawia wypozyczonaKsiazka = null i wyświetl komunikat o zwrocie książki.
+* toString() - Zwraca opis czytelnika i informację, czy posiada wypożyczoną książkę.
