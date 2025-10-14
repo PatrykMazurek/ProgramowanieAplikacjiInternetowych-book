@@ -4,30 +4,30 @@ description: Podstawy języka Java
 
 # Podstawy
 
-## Teoria&#x20;
+## Teoria
 
-Rozdział 2 - Podstawowe elementy języka Java
+Rozdział 2 - Java Podstawy, Cay S. Horstmann
 
-Rozdział 3 - Podstawowe elementy języka Java
+Rozdział 3 - Java Podstawy, Cay S. Horstmann
 
 ## **Narzędzia wiersza poleceń**
 
-Jeżeli wymagane jest szybkie modyfikowanie kodu bez środowiska programistycznego można wykorzystać interaktywny interpreter wpisując w wiersz poleceń lub PowerShell polecenie `jshell`.&#x20;
+Jeżeli wymagane jest szybkie modyfikowanie kodu bez środowiska programistycznego można wykorzystać interaktywny interpreter wpisując w wiersz poleceń lub PowerShell polecenie `jshell`.
 
-Wykonując polecenie `javac` wykonywane jest kompilacja plików plików `*.java` do plików `*.class`.  Przykład wykonania kompilacji dal pliku `HellowWord.java`&#x20;
+Wykonując polecenie `javac` wykonywane jest kompilacja plików plików `*.java` do plików `*.class`. Przykład wykonania kompilacji dal pliku `HellowWord.java`
 
 `javac HellowWord.java`
 
 Po skompilowaniu plików java, aby je uruchomić należy wykonać polecenie `java`, dzięki temu uruchomimy napisany wcześniej program. Przykład wykonania.
 
-`java HelloWord`&#x20;
+`java HelloWord`
 
 ### **Środowiska programistyczne**
 
 1. [intellJ](https://www.jetbrains.com/idea/)
 2. [VS Code](https://code.visualstudio.com/)
 
-Nie zalecam stosować rozszerzeń za pomocą, których można generować kod. Zajęcia przeznaczone są do poznania się z podstawowymi zadami i mechanizmów działających w środowisku. W późniejszym etapie jak najbardziej polecam do pracy z SI ponieważ to codzienność. &#x20;
+Nie zalecam stosować rozszerzeń za pomocą, których można generować kod. Zajęcia przeznaczone są do poznania się z podstawowymi zadami i mechanizmów działających w środowisku. W późniejszym etapie jak najbardziej polecam do pracy z SI ponieważ to codzienność.
 
 ### **Sterowanie przebiegiem programu**
 
@@ -37,7 +37,7 @@ W języku Java wyróżniamy kilka struktór, które pozwalają nam na sterowanie
 * wyrażenie warunkowe `if` \ `else if`
 * `switch - case`
 * pętla `for` \ `foreach`
-* pęlta `while`&#x20;
+* pęlta `while`
 * pętla `do-while`
 
 Po krótce przedstawię budowę i zasady działąnia każdej z pętli.
@@ -70,7 +70,7 @@ if (grade >= 90) {
 }
 ```
 
-W przedstawionym kodzie sprawdzane je wartość zmiennej `grade`, która jest sprawdzana do momentu aż któryś z warunków nie zwróci wartości true. Jeżeli jest zwracana wartość False, to przechodzimy do następnego warunku. Jeżeli zostanie zwrócona wartość true wtedy jest wykonywany fragment kodu a pozostałe warunki nie są już sprawdzane.&#x20;
+W przedstawionym kodzie sprawdzane je wartość zmiennej `grade`, która jest sprawdzana do momentu aż któryś z warunków nie zwróci wartości true. Jeżeli jest zwracana wartość False, to przechodzimy do następnego warunku. Jeżeli zostanie zwrócona wartość true wtedy jest wykonywany fragment kodu a pozostałe warunki nie są już sprawdzane.
 
 **switch - case**
 
@@ -87,7 +87,7 @@ switch (day) {
 
 Wyrażenie `switch` pozwala na wykorzystanie różnych instrukcji kodu w zależności od wartości zmiennej. Jeżeli nie zostanie dopasowana wartość zmienne zostanie wykonana instrukcja domyślna (`default`).
 
-**Pętla for**&#x20;
+**Pętla for**
 
 ```java
 for (int i = 1; i <= 5; i++) {
@@ -95,7 +95,7 @@ for (int i = 1; i <= 5; i++) {
 }
 ```
 
-Pętla for pozwala nam na wykonanie instrukcji kodu określoną liczbę razy. W przedstawionym kodzie powyżej wypisujemy poszczególne numery kroków do momentu aż będzie spełniony warunek `i <= 5`. &#x20;
+Pętla for pozwala nam na wykonanie instrukcji kodu określoną liczbę razy. W przedstawionym kodzie powyżej wypisujemy poszczególne numery kroków do momentu aż będzie spełniony warunek `i <= 5`.
 
 **Pętla foreach**
 
