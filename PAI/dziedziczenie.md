@@ -129,3 +129,26 @@ public class Student  extends Person{
 
 W powyższym przykładzie w klasie `Person` została zdefiniowana metoda `persent()`, której zadaniem jest przedstawianie się. W klasie `Student` została nadpisana metoda `present()`, w której poza tym że wykorzystujemy metodę z klasy bazowej to dodajemy dodatkową informację o numerze studenta. Aby wykorzystać metody z klasy bazowej musimy w klasie pochodnej zastosować słówko `super` przed wywołaniem metody.&#x20;
 
+### Zadania
+
+1.
+
+Twoim zadaniem jest zaprojektowanie i zaimplementowanie systemu powiadomień, który umożliwia wysyłanie różnych typów komunikatów do użytkowników. W systemie mogą występować różne kanały powiadomień (np. e-mail, SMS, powiadomienia push), które posiadają wspólne cechy, ale różnią się sposobem wysyłania wiadomości.
+
+Wymagania funkcyjne
+
+Stwórz klasę bazową `Notification`, która będzie zawierać:
+
+Pola:
+
+Recipient - odbiorca wiadomości (np. nr tel, e-mail, identyfikator użytkownika)
+
+Message – treść wiadomości
+
+Konstruktor przyjmujący powyższe pola
+
+Metodę `send()`, która będzie odpowiadać za wysłanie wiadomości.
+
+Stwórz trzy klasy `EmailNotification`, `SMSNotification`, `PushNotification`, które będą dziedziczące po klasie Notification. Każda z klas powinna nadpisywać metodę `send()` w zależności od sposobu wysyłania wiadomości np. `EmailNotification` w metodzie `send()` powinna wyświetlać w konsoli „Wysłano e-mail do \<recipient> : \<message>”.
+
+Stwórz rozwiązanie za pomocą, którego pozwolisz użytkownikowi na wpisanie do kogo wysłać wiadomość wraz z treść oraz sposobu wysłania wiadomości. &#x20;
