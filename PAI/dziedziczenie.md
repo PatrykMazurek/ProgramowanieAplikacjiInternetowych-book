@@ -2,7 +2,7 @@
 
 ### Teoria
 
-Rozdział 5 - Podstawowe elementy języka Java
+Rozdział 5 - Java Podstawy, Cay S. Horstmann
 
 ### Dziedziczenie
 
@@ -129,9 +129,94 @@ public class Student  extends Person{
 
 W powyższym przykładzie w klasie `Person` została zdefiniowana metoda `persent()`, której zadaniem jest przedstawianie się. W klasie `Student` została nadpisana metoda `present()`, w której poza tym że wykorzystujemy metodę z klasy bazowej to dodajemy dodatkową informację o numerze studenta. Aby wykorzystać metody z klasy bazowej musimy w klasie pochodnej zastosować słówko `super` przed wywołaniem metody.&#x20;
 
+### Klasa Abstrakcyjna&#x20;
+
+W języku Java klasy mogą być zwykłe lub abstrakcyjne.\
+Klasy abstrakcyjne są szablonami, które nie mogą być bezpośrednio tworzone (instancjonowane), ale mogą zawierać wspólne elementy dla innych klas.
+
+Klasa abstrakcyjna w definicja zawiera słowo kluczowe `abstract`. Taka deklaracja powoduje pewien problem ponieważ taka klasa nie może być utworzona (`new` jest niedozwolone).  Klasa abstrakcyjna może zawierać pola, zwykłe metody ( z implementacją), metody abstrakcyjne (tylko definicja), Każda klasa, która dziedziczy po klasie abstrakcyjnej musi zaimplementować metody abstrakcyjne, chyba że sama jest klasą abstrakcyjną.&#x20;
+
+**Przykład klasy abstrakcyjnej**
+
+```java
+public abstract class Animal {
+
+    String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    // metoda zwykła (z implementacją)
+    public void introduceYourself() {
+        System.out.println("Jestem zwierzęciem o imieniu " + name);
+    }
+
+    // metoda abstrakcyjna (bez implementacji)
+    public abstract void voice();
+}
+```
+
+**Dziedziczenie po klasie abstrakcyjnej**
+
+Klasa, która dziedziczy po klasie abstrakcyjnej dodatkowo musi implementować wszystkie metody abstrakcyjne klasy nadrzędnej.
+
+```java
+public class Dog extends Animal {
+    public Dog(String name) {
+        super(name);
+    }
+
+    @Override
+    public void voice() {
+        System.out.println("Hau! Hau!");
+    }
+}
+
+public class Cat extends Animal {
+    public Cat(String name) {
+        super(name);
+    }
+
+    @Override
+    public void voice() {
+        System.out.println("Miau!");
+    }
+}
+```
+
+**Przykład użycia**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Animal a = new Animal("Burek"); – nie można tworzyć obiektu klasy abstrakcyjnej!
+
+        Animal dog = new Dog("Reksio");
+        Animal cat = new Cat("Filemon");
+
+        dog.introduceYourself();
+        dog.voice();
+
+        cat.introduceYourself();
+        cat.voice();
+    }
+}
+```
+
+W&#x20;
+
+### Polimorfizm
+
+
+
 ### Zadania
 
-1.
+1. Napisz program pozwalający na rekrutację nowych pracowników (dopisywanie ich do listy) oraz wyświetlanie danych obecnych (wypisywanie z listy)
+   * klasą nadrzędną będzie **Employee**, a dziedziczyć po niej będą minimum dwie klasy reprezentujące dwa różne zawody
+   * należy zaproponować atrybuty opisujące każdego z nich
+   * użytkownik ma możliwość utworzenia nowego pracownika za pomocą inputu z klawiatury oraz wypisania wszystkich już istniejących w bazie
+2.
 
 Twoim zadaniem jest zaprojektowanie i zaimplementowanie systemu powiadomień, który umożliwia wysyłanie różnych typów komunikatów do użytkowników. W systemie mogą występować różne kanały powiadomień (np. e-mail, SMS, powiadomienia push), które posiadają wspólne cechy, ale różnią się sposobem wysyłania wiadomości.
 
