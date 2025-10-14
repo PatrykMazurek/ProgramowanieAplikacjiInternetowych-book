@@ -2,7 +2,7 @@
 
 ## Teoria
 
-Rozdział 4 - Podstawowe elementy języka Java
+Rozdział 4 - Java Podstawy, Cay S. Horstmann
 
 ### Obiekty i klasy
 
@@ -146,11 +146,12 @@ public static void main(String[] args) {
 
 ### Zadania
 
-1. Utwórz klasę _Student_ reprezentującą człowieka. _Student_ musi posiadać takie pola instancji jak **age**, **name** i **height**. Klasa powinna zawierać jeden pusty konstruktor oraz drugi wymagający podania wszystkich pól. Należy zastosować zasady hermetyzacji. W pliku Main.java stwórz nową instancję klasy używając każdego konstruktora.
-2. Utwórz klasę _StringUtils_ wraz z metodą **Boolean isAnagram(String s1, String s2)** sprawdzającą czy łańcuch s1 jest anagramem s2. W pliku Main.java utwórz jedną instancję obiektu StringUtils, a następnie wywołaj trzykrotnie metodę _isAnagram()_ dla różnych stringów. _Anagram jest to wyraz lub wyrażenie powstałe przez przestawienie liter innego wyrazu lub wyrażenia_
-3. Utwórz klasę _Employee_ reprezentującą pracownika oraz klasę _HomeAddress_. _Employee_ musi posiadać prywatne pola jak: **name**, **salary**, **hireDate** i **homeAddress**. Inicjalizacja pól powinna odbywać się jako argumenty przekazane w konstruktorze.
+1. Korzystając z wbudowanej klasy _Date_ lub _LocalDate_, utwórz program w którym policzysz ilość dni w semestrze letnim i wyświetl je na ekranie.
+2. Utwórz klasę _Student_ reprezentującą człowieka. _Student_ musi posiadać takie pola instancji jak **age**, **name** i **height**. Klasa powinna zawierać jeden pusty konstruktor oraz drugi wymagający podania wszystkich pól. Należy zastosować zasady hermetyzacji. W pliku Main.java stwórz nową instancję klasy używając każdego konstruktora.
+3. Utwórz klasę _StringUtils_ wraz z metodą **Boolean isAnagram(String s1, String s2)** sprawdzającą czy łańcuch s1 jest anagramem s2. W pliku Main.java utwórz jedną instancję obiektu StringUtils, a następnie wywołaj trzykrotnie metodę _isAnagram()_ dla różnych stringów. _Anagram jest to wyraz lub wyrażenie powstałe przez przestawienie liter innego wyrazu lub wyrażenia_
+4. Utwórz klasę _Employee_ reprezentującą pracownika oraz klasę _HomeAddress_. _Employee_ musi posiadać prywatne pola jak: **name**, **salary**, **hireDate** i **homeAddress**. Inicjalizacja pól powinna odbywać się jako argumenty przekazane w konstruktorze.
    * przygotuj getter _getInfo()_ który zwróci informację o pracowniku wraz z jego adresem.
    * przygotuj setter _setNewAddress(HomeAddress newAddress)_ który pozwoli na zmodyfikowanie adresu.
    * przygotuj metodę _raiseSalary(Double byPercent)_ która pozwoli na zwiększenie **salary** o _p%_.
    * W pliku Main.java stwórz tablicę pracowników (min. 3) i uzupełnij dane, następnie wyświetl informację o wszystkich pracownikach. Zwiększ ich wypłatę i następnie wyświetl ponownie informacje o nich.
-4. Dodaj do klasy _Employee_ dodatkowy konstruktor, z domyślną wartością dla **salary**.&#x20;
+5. Dodaj do klasy _Employee_ dodatkowy konstruktor, z domyślną wartością dla **salary**.&#x20;
