@@ -2,7 +2,7 @@
 
 ## Teoria
 
-Rozdział 4 - Java Podstawy, Cay S. Horstmann
+Rozdział 4 - Cay S. Horstmann, Gary Cornell, Java Podstawy
 
 ### Obiekty i klasy
 
