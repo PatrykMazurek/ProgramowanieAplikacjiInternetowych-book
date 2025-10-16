@@ -192,8 +192,8 @@ public class Main {
     public static void main(String[] args) {
         // Animal a = new Animal("Burek"); – nie można tworzyć obiektu klasy abstrakcyjnej!
 
-        Animal dog = new Dog("Reksio");
-        Animal cat = new Cat("Filemon");
+        Dog dog = new Dog("Reksio");
+        Cat cat = new Cat("Filemon");
 
         dog.introduceYourself();
         dog.voice();
@@ -204,11 +204,43 @@ public class Main {
 }
 ```
 
-W&#x20;
+W wyniku wykonania powyższego kodu zostaną utworzone dwa obiekty typu `Dog` i `Cat`. Każdy z nich dziedziczy metodę `introduceYourself()` za pomocą, której przedstawia się. Oraz implementuje metodę `voice()`, która powoduje że dany obiekt daje głos. poniżej przedstawiony jest wynik poniższego kodu
+
+```
+Jestem zwierzęciem o imieniu Reksi
+Hau Hau!
+Jestem zwierzęciem o imieniu Filemon
+Miau!
+```
 
 ### Polimorfizm
 
+Polimorfizm w języku Java to jedna z podstawowych zasad programowania obiektowego, która pozwala różnym obiektom reagować w odmienny sposób na to samo wywołanie metody. Zachowanie to pozwala na tworzenie kodu bardziej elastycznego, i bazującego na typach ogólnych, a mimo to poprawnie wywołuje metody właściwe dla konkretnego typu obiektu w czasie działania programu.&#x20;
 
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Animal a = new Animal("Burek"); – nie można tworzyć obiektu klasy abstrakcyjnej!
+
+        Animal dog = new Dog("Reksio");
+        Animal cat = new Cat("Filemon");
+
+        dog.introduceYourself();
+        dog.voice();
+        cat.introduceYourself();
+        cat.voice();
+        
+        Animal[] groupAnimal = {
+            new Cat("Filemon"), 
+            new Dog("Reksio"), 
+            new Dog("Pimposz")
+            };
+        
+    }
+}
+```
+
+W powyższym przypadku klasy `Dog` i `Cat` dziedziczą po klasie abstrakcyjnej `Anima.` To rozwiązanie pozwala na wykorzystanie ogólnego typu `Animal` do przechowywanie obiektów klas `Dog` i `Cat` i jednoczenie zapewnia odpowiednie działanie metod dla odpowiednich obiektów.&#x20;
 
 ### Zadania
 
