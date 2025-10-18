@@ -39,7 +39,7 @@ public class Dog implements Animal{
 
 ```
 
-W powyższym przykładzie przedstawiono sposób implementacji interfejsu w klasie. Aby implementować wybrany interfejs należy po nazwie klasy dodać słówko `interface` i  podać nazwę wybranego interfejsu.&#x20;
+W powyższym przykładzie przedstawiono sposób implementacji interfejsu w klasie. Aby implementować wybrany interfejs należy po nazwie klasy dodać słówko `implements` i  podać nazwę wybranego interfejsu.&#x20;
 
 
 

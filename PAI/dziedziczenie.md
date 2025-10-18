@@ -269,3 +269,13 @@ Metodę `send()`, która będzie odpowiadać za wysłanie wiadomości.
 Stwórz trzy klasy `EmailNotification`, `SMSNotification`, `PushNotification`, które będą dziedziczące po klasie Notification. Każda z klas powinna nadpisywać metodę `send()` w zależności od sposobu wysyłania wiadomości np. `EmailNotification` w metodzie `send()` powinna wyświetlać w konsoli „Wysłano e-mail do \<recipient> : \<message>”.
 
 Stwórz rozwiązanie za pomocą, którego pozwolisz użytkownikowi na wpisanie do kogo wysłać wiadomość wraz z treść oraz sposobu wysłania wiadomości. &#x20;
+
+3.  Napisz hierarchię klas, która symuluje różne typy zwierząt w zoo.\
+    Każde zwierzę potrafi się przedstawić i wydawać dźwięki — ale każde robi to inaczej. Stwórz klasę bazową `Animal` z polami **imie** i **wiek** oraz metody
+
+    `introduceYourself()`  - wypisuje imię i weki&#x20;
+
+    `voice()` i `eat()` - które domyślnie wypisują "głos" i "jedzenie".
+
+    Stwórz kilka klas pochodnych, które będą reprezentować zwierzęta mieszkające w zoo. nadpisz metody `voice()` i `eat()` dostosowując je do odpowiednich zwierząt. Wyświetl w pętli informacje o zwierzątach mieszkających w zoo.
+4. &#x20;  &#x20;
