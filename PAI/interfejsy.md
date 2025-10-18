@@ -43,3 +43,9 @@ W powyższym przykładzie przedstawiono sposób implementacji interfejsu w klasi
 
 
 
+### Zadania
+
+1.  Twoim zadaniem jest zaprojektowanie i zaimplementowanie systemu powiadomień, który umożliwia wysyłanie różnych typów komunikatów do użytkowników. W systemie mogą występować różne kanały powiadomień (np. e-mail, SMS, powiadomienia push), które posiadają wspólne cechy, ale różnią się sposobem wysyłania wiadomości. Stwórz interfejs `Notification`, który będzie zawierał deklarację metody `send()`.&#x20;
+
+    Stwórz przykładowe klasy np. `EmailNotification`, `SMSNotification`, `PushNotification` , które będą implementować interfejs Notification. Każda z klas będzie powinna zawierać prywatne pola **recipient, message.** Kazda z klas powinna implementować metodę send() w zależności w jaki sposób wysyła wiadomość np. `EmailNotification` w metodzie `send()` powinna wyświetlać w konsoli „Wysłano e-mail do \<recipient> : \<message>”.
+2. Zadanie 1 z części Dziedziczenie proszę przerobić wykorzystując interfejsy i stwórz kilka klas, które będą reprezentować zwierzęta, w każdej klasie implementuj wymagane metody w sposób odpowiedni dla danej klasy.

@@ -244,38 +244,14 @@ W powyższym przypadku klasy `Dog` i `Cat` dziedziczą po klasie abstrakcyjnej `
 
 ### Zadania
 
-1. Napisz program pozwalający na rekrutację nowych pracowników (dopisywanie ich do listy) oraz wyświetlanie danych obecnych (wypisywanie z listy)
-   * klasą nadrzędną będzie **Employee**, a dziedziczyć po niej będą minimum dwie klasy reprezentujące dwa różne zawody
-   * należy zaproponować atrybuty opisujące każdego z nich
-   * użytkownik ma możliwość utworzenia nowego pracownika za pomocą inputu z klawiatury oraz wypisania wszystkich już istniejących w bazie
-2.
-
-Twoim zadaniem jest zaprojektowanie i zaimplementowanie systemu powiadomień, który umożliwia wysyłanie różnych typów komunikatów do użytkowników. W systemie mogą występować różne kanały powiadomień (np. e-mail, SMS, powiadomienia push), które posiadają wspólne cechy, ale różnią się sposobem wysyłania wiadomości.
-
-Wymagania funkcyjne
-
-Stwórz klasę bazową `Notification`, która będzie zawierać:
-
-Pola:
-
-Recipient - odbiorca wiadomości (np. nr tel, e-mail, identyfikator użytkownika)
-
-Message – treść wiadomości
-
-Konstruktor przyjmujący powyższe pola
-
-Metodę `send()`, która będzie odpowiadać za wysłanie wiadomości.
-
-Stwórz trzy klasy `EmailNotification`, `SMSNotification`, `PushNotification`, które będą dziedziczące po klasie Notification. Każda z klas powinna nadpisywać metodę `send()` w zależności od sposobu wysyłania wiadomości np. `EmailNotification` w metodzie `send()` powinna wyświetlać w konsoli „Wysłano e-mail do \<recipient> : \<message>”.
-
-Stwórz rozwiązanie za pomocą, którego pozwolisz użytkownikowi na wpisanie do kogo wysłać wiadomość wraz z treść oraz sposobu wysłania wiadomości. &#x20;
-
-3.  Napisz hierarchię klas, która symuluje różne typy zwierząt w zoo.\
-    Każde zwierzę potrafi się przedstawić i wydawać dźwięki — ale każde robi to inaczej. Stwórz klasę bazową `Animal` z polami **imie** i **wiek** oraz metody
+1.  Napisz hierarchię klas, która symuluje różne typy zwierząt w zoo.\
+    Każde zwierzę potrafi się przedstawić i wydawać dźwięki — ale każde robi to inaczej. Stwórz klasę bazową `Animal` z polami **name** i **age** oraz metody
 
     `introduceYourself()`  - wypisuje imię i weki&#x20;
 
     `voice()` i `eat()` - które domyślnie wypisują "głos" i "jedzenie".
 
-    Stwórz kilka klas pochodnych, które będą reprezentować zwierzęta mieszkające w zoo. nadpisz metody `voice()` i `eat()` dostosowując je do odpowiednich zwierząt. Wyświetl w pętli informacje o zwierzątach mieszkających w zoo.
-4. &#x20;  &#x20;
+    Stwórz kilka klas pochodnych, które będą reprezentować zwierzęta mieszkające w zoo. nadpisz metody `voice()` i `eat()` dostosowując je do odpowiednich zwierząt. Wyświetl w pętli informacje o zwierzętach mieszkających w zoo.
+2. Stwórz system, który potrafi obliczać pola różnych figur geometrycznych.\
+   Każda figura ma nazwę i sposób obliczania pola — ale sposób ten zależy od typu figury. Stwórz klasę abstrakcyjną `Figura`, która będzie zawierać prywatne pola **nazwa, obwod, pole**, konstruktor ustawiający nazwę oraz dwie metody abstrakcyjne `void obliczPole()` i `void obliczObwod()`. oraz jedną metodę zwykłą `wyswietlInfo()`. Stwórz klasy potomne, które będą dziedziczyć po klasie Figura. Wykorzystaj tablicę `Figura[]` do przetestowania powyższego rozwiązania.
+3. Korzystając z zadania 4 z lekcji Obiekty i Klasy stwórz klasę `Employee` jako klasę abstrakcyjną oraz przerób metodę _`raiseSalary()`_ na metodę abstrakcyjną tak aby była implementowana w klasach potomnych. Dodaj metodę abstrakcyjną CalculateSalaries(), która w zależności od klasy będzie obliczać&#x20;
