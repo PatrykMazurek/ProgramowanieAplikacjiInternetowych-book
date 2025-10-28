@@ -41,7 +41,11 @@ public class Dog implements Animal{
 
 W powyższym przykładzie przedstawiono sposób implementacji interfejsu w klasie. Aby implementować wybrany interfejs należy po nazwie klasy dodać słówko `implements` i  podać nazwę wybranego interfejsu.&#x20;
 
+**Metody domyślne i stałe w interfejsach**
 
+**Metody prywatne**
+
+**Dziedziczenie interfejsów**
 
 ### Zadania
 
@@ -49,3 +53,14 @@ W powyższym przykładzie przedstawiono sposób implementacji interfejsu w klasi
 
     Stwórz przykładowe klasy np. `EmailNotification`, `SMSNotification`, `PushNotification` , które będą implementować interfejs Notification. Każda z klas będzie powinna zawierać prywatne pola **recipient, message.** Kazda z klas powinna implementować metodę send() w zależności w jaki sposób wysyła wiadomość np. `EmailNotification` w metodzie `send()` powinna wyświetlać w konsoli „Wysłano e-mail do \<recipient> : \<message>”.
 2. Zadanie 1 z części Dziedziczenie proszę przerobić wykorzystując interfejsy i stwórz kilka klas, które będą reprezentować zwierzęta, w każdej klasie implementuj wymagane metody w sposób odpowiedni dla danej klasy.
+3.  Stwórz system opisujący pojady, które mogą pełnić różne funkcje. Stwórz następujące interfejsy:
+
+    `LandVehicle` zawierający metody: **void driveForward(double speed), void applyBrakes()**
+
+    `WaterVehicle` zawierający metody: **void navigateOnWater(double headingDeg, double speed),  void anchor(), void removeAnchor()**
+
+    `AirVehicle` zawierający metody: **void takeOff(), void land().**
+
+    Stwórz dwie klasy AmphibousVehicle i FlyingCar, które będą implementować odpowiednie interfejsy.  Dodatkowo klasa AmphibousVehicle powinna zawierać metody&#x20;
+4. Bazując na zadaniu 3 dodaj dodatkowe interfejsy  `Vehicle`, `AmphibousVehicle` i `FlyingCar`.  Interfejs `Vehicle` zawiera metody: **void start(), void stop(), double getSpeed(), double getFulLevel()**. Interfejsy `AmphibousVehicle` i `FlyingVehicle` powinny zawierać metody, które zostały zdefiniowane w klasie. Stwórz odpowiednią hierarchie interfejsów, tak aby w klasie implementować jak najmniej interfejsów.&#x20;
+
