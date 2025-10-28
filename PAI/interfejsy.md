@@ -61,6 +61,7 @@ W powyższym przykładzie przedstawiono sposób implementacji interfejsu w klasi
 
     `AirVehicle` zawierający metody: **void takeOff(), void land().**
 
-    Stwórz dwie klasy AmphibousVehicle i FlyingCar, które będą implementować odpowiednie interfejsy.  Dodatkowo klasa AmphibousVehicle powinna zawierać metody&#x20;
-4. Bazując na zadaniu 3 dodaj dodatkowe interfejsy  `Vehicle`, `AmphibousVehicle` i `FlyingCar`.  Interfejs `Vehicle` zawiera metody: **void start(), void stop(), double getSpeed(), double getFulLevel()**. Interfejsy `AmphibousVehicle` i `FlyingVehicle` powinny zawierać metody, które zostały zdefiniowane w klasie. Stwórz odpowiednią hierarchie interfejsów, tak aby w klasie implementować jak najmniej interfejsów.&#x20;
+    Stwórz dwie klasy `AmphibousVehicle` i `FlyingCar`, które będą implementować odpowiednie interfejsy.  Dodatkowo klasa `AmphibousVehicle` powinna zawierać metody **void switchToWaterMode(), void switchToLandMode()** a klasa `FlyingCar` powinna zawierać metody **void switchToDriveMode(), void switchToFlightMode()**. W klasach `AmphibousVehicle` i `FlyingCar` stwórz konstruktor i niezbędne pola (jeżeli są wymagane).
+4. Bazując na zadaniu 3 dodaj dodatkowe interfejsy  `Vehicle`, `AmphibousVehicle` i `FlyingCar`.  Interfejs `Vehicle` zawiera metody: **void start(), void stop(), double getSpeed(), double getFulLevel()**. Interfejsy `AmphibousVehicle` i `FlyingVehicle` powinny zawierać metody, które zostały zdefiniowane w klasie. Stwórz odpowiednią hierarchie interfejsów, tak aby w klasie implementować jak najmniej interfejsów. Przetestuj rozwiązania tworząc klasy np. Car, Bus, Ship, airpalne, Amphibian. Klasy powinny zawierać niezbędne pola i metody z interfejsów.
+5.
 
