@@ -43,9 +43,127 @@ W powyższym przykładzie przedstawiono sposób implementacji interfejsu w klasi
 
 **Metody domyślne i stałe w interfejsach**
 
+Metody domyślne pozwalają na implementacji metody w interfejsie, dzięki temu można zastosować domyślne rozwiązanie w pierwszej implementacji w klasie. Metody domyślne można nadpisywać w klasie ale nie jest to wymagane.
+
+```java
+public interface Animal {
+    
+    void voice();
+    
+    default void eat(String food) {
+        System.out.println(getName() + " is eating " + food + ".");
+    }
+
+    default void sleep() {
+        System.out.println(getName() + " is sleeping...");
+    }
+    
+    String getName();
+}
+```
+
+&#x20;W powyższym przykładzie mamy zaimplementowane dwie metody domyślne (eat, sleep) dzięki czemu nie musimy wykonywać implementacji w klasie.&#x20;
+
 **Metody prywatne**
 
+Metody prywatne mogą być tylko wywoływane w definicji interfejsu, czyli mogą być tylko wykonywane z metodami domyślnymi. Zastosowanie metod prywatnych pozwala na usunięcie często powtarzającego się kodu w wielu miejscach.
+
+```java
+public interface Animal {
+    
+    void voice();
+    
+    default void eat(String food) {
+        System.out.println(getName() + " is eating " + food + ".");
+        logAction("Eating");
+    }
+
+    default void sleep() {
+        System.out.println(getName() + " is sleeping...");
+        logAction("Sleeping");
+    }
+    
+    private void logAction(String action) {
+        System.out.println("[LOG] " + getName() + " - action: " + action);
+    }
+    
+    String getName();
+}
+```
+
+W powyższym przykładnie została dodana prywatna metoda, która tworzy logi z każdej wywołanej akcji. Metoda `logAction(String action)` może być tylko wywoływana z poziomu interfejsu.
+
+Przykład implementacji powyższych przykładów w klasie Dog
+
+```java
+public class Dog implements Animal {
+    private String name;
+    
+    public Dog(String name) {
+        this.name = name;
+    }
+    
+    @Override
+    public void voice() {
+        System.out.println(name + " says: Woof woof!");
+    }
+    
+    @Override
+    public String getName() {
+        return name;
+    }
+}
+```
+
 **Dziedziczenie interfejsów**
+
+Interfejsy podobnie jak lasy mogą być dziedziczone z tą różnicą że interfejsy mogą dziedziczyć po wielu interfejsach. Dziedziczenie pozwala nam na pisanie bardziej elastycznego kodu&#x20;
+
+```java
+public interface Pet extends Animal {
+    void play();
+
+    default void feed() {
+        System.out.println(getName() + " is being fed with pet food.");
+    }
+}
+```
+
+```java
+public interface WildAnimal extends Animal {
+    void hunt();
+    default void flee() {
+        System.out.println(getName() + " is fleeing into the wilderness!");
+    }
+}
+```
+
+Implementacja powyższych interfejsów w klasie&#x20;
+
+```java
+public class Dog implements Pet {    
+    private String name;
+    
+    public Dog(String name) {
+        this.name = name;
+    }
+    
+    @Override
+    public void voice() {
+        System.out.println(name + " says: Woof!");
+    }
+    
+    @Override
+    public String getName() {
+        return name;
+    }
+    
+    @Override
+    public void play() {
+        System.out.println(name + " is playing with a ball!");
+    }
+}
+```
 
 ### Zadania
 
