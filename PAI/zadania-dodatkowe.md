@@ -34,6 +34,10 @@
 
     Edycja / usunięcie kontaktu lub metody kontaktu.
 
-    Proste wyświetlenie kontaktu w postaci (osoba imie nazwisko&#x20;
+    Proste wyświetlenie kontaktu w postaci
 
-    1. ccdddcdsd cdsds
+    &#x20;\- osoba imię nazwisko telefon, email.
+
+    &#x20;\- firma nazwa firmy, telefon, email.
+
+    Program powinien działać w konsoli. Wraz z poznaną wiedzą zadanie będzie otrzymywać kolejne uaktualnienia i dodatkowe rozwiązania.
