@@ -254,4 +254,13 @@ W powyższym przypadku klasy `Dog` i `Cat` dziedziczą po klasie abstrakcyjnej `
     Stwórz kilka klas pochodnych, które będą reprezentować zwierzęta mieszkające w zoo. nadpisz metody `voice()` i `eat()` dostosowując je do odpowiednich zwierząt. Wyświetl w pętli informacje o zwierzętach mieszkających w zoo.
 2. Stwórz system, który potrafi obliczać pola różnych figur geometrycznych.\
    Każda figura ma nazwę i sposób obliczania pola — ale sposób ten zależy od typu figury. Stwórz klasę abstrakcyjną `Figura`, która będzie zawierać prywatne pola **nazwa, obwod, pole**, konstruktor ustawiający nazwę oraz dwie metody abstrakcyjne `void obliczPole()` i `void obliczObwod()`. oraz jedną metodę zwykłą `wyswietlInfo()`. Stwórz klasy potomne, które będą dziedziczyć po klasie Figura. Wykorzystaj tablicę `Figura[]` do przetestowania powyższego rozwiązania.
-3. Korzystając z zadania 4 z lekcji Obiekty i Klasy stwórz klasę `Employee` jako klasę abstrakcyjną oraz przerób metodę _`raiseSalary()`_ na metodę abstrakcyjną tak aby była implementowana w klasach potomnych. Dodaj metodę abstrakcyjną CalculateSalaries(), która w zależności od klasy będzie obliczać&#x20;
+3.  Korzystając z zadania 4 z lekcji Obiekty i Klasy stwórz klasę `Employee` jako klasę abstrakcyjną. Dodaj metodę abstrakcyjną `CalculateSalaries()`, która w zależności od klasy będzie obliczać pensje pracownika. Stwórz klasy pochodne, które będą reprezentować różne formy zatrudnienia np.&#x20;
+
+    `FullTimeEmployee`  - posiadający stałe wynagrodzenie
+
+    `ContractEmployee` - posiadający stawkę razy liczba godz.&#x20;
+
+    `Intern` - Jako pensja jest stypendium czyli stałą kwota wynagrodzenia.
+
+    Przetestuje działanie klasy tworząc tablicę lub listę pracowników zatrudnionych w różnych formach zatrudnienia.
+
