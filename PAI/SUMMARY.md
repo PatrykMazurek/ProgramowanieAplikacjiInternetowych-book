@@ -7,4 +7,5 @@
 * [Dziedziczenie](dziedziczenie.md)
 * [Interfejsy](interfejsy.md)
 * [Wyjątki](wyjatki.md)
+* [Kolekcje](kolekcje.md)
 * [Zadania dodatkowe](zadania-dodatkowe.md)
