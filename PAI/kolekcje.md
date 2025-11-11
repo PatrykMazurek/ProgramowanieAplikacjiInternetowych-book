@@ -38,7 +38,7 @@ Więcej dostępnych metod można znaleźć w dokumentacji&#x20;
 
 ### Kolekcje Map
 
-Map - Kołecka
+Map - Kolekcja, która składa się z klucza i wartości, w kolekcji mam klucz powinien być unikalny a wartość może się powtarzać. Interfejs Map nie dziedziczy po interfejsie Collection. Najpopularniejsze obiekty Map:
 
 * HashMap
 * LinkedHashMap
@@ -46,7 +46,18 @@ Map - Kołecka
 
 Przykład zastosowania&#x20;
 
-
+```java
+Map<String, String> student = new HashMap<>();
+student.put("s0001", "Jan Kowalski");
+student.put("s0002", "Ewa Nowak");
+student.put("s0003", "Jan Nowak");
+String temp = student.remove("s0001");
+if (student.containsKey("s0005")){
+    System.out.println("student jst na liście");
+}else {
+    System.out.println("studenta nie ma na liście");
+}
+```
 
 Więcej dostępnych metod można znaleźć w dokumntacji&#x20;
 
@@ -62,7 +73,8 @@ Set - kolekcja nie uporządkowana, w której nie masz kontroli na kolejnością 
 
 Przykład zastosowania&#x20;
 
-
+```java
+```
 
 Więcej dostępnych metod można znaleźć w dokumentacji&#x20;
 
