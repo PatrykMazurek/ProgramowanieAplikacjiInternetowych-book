@@ -74,6 +74,20 @@ Set - kolekcja nie uporządkowana, w której nie masz kontroli na kolejnością 
 Przykład zastosowania&#x20;
 
 ```java
+Set<String> product = new HashSet<>();
+product.add("mleko");
+product.add("jabłko");
+product.add("woda");
+if(product.contains("ser")){
+    System.out.println("produkt jest na liście");
+}else{
+    System.out.println("produktu nie ma na liście");
+}
+if (product.remove("woda")){
+    System.out.println("produkt usunięty z listy");
+}else{
+    System.out.println("produktu nie udało się usunąć");
+}
 ```
 
 Więcej dostępnych metod można znaleźć w dokumentacji&#x20;
