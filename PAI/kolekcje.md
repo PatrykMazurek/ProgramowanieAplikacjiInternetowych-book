@@ -32,17 +32,41 @@ if (idx != -1) {
 }
 ```
 
-Więcej dostępnych metod można znaleźć w dokumntacji&#x20;
+Więcej dostępnych metod można znaleźć w dokumentacji&#x20;
 
 {% embed url="https://docs.oracle.com/javase/8/docs/api/java/util/List.html" %}
 
 ### Kolekcje Map
 
+Map - Kołecka
 
+* HashMap
+* LinkedHashMap
+* TreeMap
+
+Przykład zastosowania&#x20;
+
+
+
+Więcej dostępnych metod można znaleźć w dokumntacji&#x20;
+
+{% embed url="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html" %}
 
 ### Kolekcje Set
 
+Set - kolekcja nie uporządkowana, w której nie masz kontroli na kolejnością elementów, nie można odwołać się do elementów po indeksie. Set nie pozwala na przechowywanie duplikatów. Interfejs Set dziedziczy po interfejsie Collection. Najpopularniejsze obiekty Set:
 
+* HashSet
+* LinkedHashSet
+* TreeSet
+
+Przykład zastosowania&#x20;
+
+
+
+Więcej dostępnych metod można znaleźć w dokumentacji&#x20;
+
+{% embed url="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html" %}
 
 ### Zadania
 
