@@ -99,3 +99,15 @@ Więcej dostępnych metod można znaleźć w dokumentacji&#x20;
 
 
 ### Materiały dodatkowe
+
+{% embed url="https://www.geeksforgeeks.org/java/list-interface-java-examples/" %}
+
+{% embed url="https://www.digitalocean.com/community/tutorials/java-list" %}
+
+{% embed url="https://www.geeksforgeeks.org/java/set-in-java/" %}
+
+{% embed url="https://www.digitalocean.com/community/tutorials/java-set" %}
+
+{% embed url="https://www.geeksforgeeks.org/java/map-interface-in-java/" %}
+
+{% embed url="https://javastart.pl/baza-wiedzy/klasy/interfejs-map" %}
