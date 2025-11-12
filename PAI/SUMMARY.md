@@ -6,4 +6,6 @@
 * [Obiekty i Klasy](obiekty-i-klasy.md)
 * [Dziedziczenie](dziedziczenie.md)
 * [Interfejsy](interfejsy.md)
+* [Wyjątki](wyjatki.md)
+* [Kolekcje](kolekcje.md)
 * [Zadania dodatkowe](zadania-dodatkowe.md)
