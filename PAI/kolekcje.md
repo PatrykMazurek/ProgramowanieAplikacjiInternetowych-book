@@ -96,7 +96,16 @@ Więcej dostępnych metod można znaleźć w dokumentacji&#x20;
 
 ### Zadania
 
+1.  Stwórz funkcję, która jako parametr przyjmie listę liczb (dowolnej długości). Funkcja ma kilka zadań:
 
+    &#x20;\- zamienić liczby ujemne na dodatnie (jeżeli takie występują)
+
+    &#x20;\- sprawdzić czy występują duplikaty, jeżeli tak to usunąć je&#x20;
+
+    &#x20;\- posortować rosnąco
+
+    Funkcja powinna zwrócić listę&#x20;
+2. Korzystając z kolekcji Map stwórz licznik słów i zwróć N najczęściej występujących słów.&#x20;
 
 ### Materiały dodatkowe
 
