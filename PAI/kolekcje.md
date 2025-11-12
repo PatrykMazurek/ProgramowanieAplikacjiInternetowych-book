@@ -105,7 +105,7 @@ Więcej dostępnych metod można znaleźć w dokumentacji&#x20;
     &#x20;\- posortować rosnąco
 
     Funkcja powinna zwrócić listę&#x20;
-2. Korzystając z kolekcji Map stwórz licznik słów i zwróć N najczęściej występujących słów.&#x20;
+2. Korzystając z kolekcji Map stwórz licznik słów i zwróć N najczęściej występujących słów. Dla wybranego tekstu policz wszystkie słowa pomijając prostych "stopwords" `["i","a","oraz","ale","lub","to","na","w","do","o"].` Zwróć najczęściej występujące słowa .
 
 ### Materiały dodatkowe
 
