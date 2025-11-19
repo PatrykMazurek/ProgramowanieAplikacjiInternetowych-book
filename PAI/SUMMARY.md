@@ -8,4 +8,5 @@
 * [Interfejsy](interfejsy.md)
 * [Wyjątki](wyjatki.md)
 * [Kolekcje](kolekcje.md)
+* [Interfejsy Funkcyjne i Lambda](interfejsy-funkcyjne-i-lambda.md)
 * [Zadania dodatkowe](zadania-dodatkowe.md)
