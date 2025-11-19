@@ -2,7 +2,30 @@
 
 ### Wyrażenia Lambda&#x20;
 
+**Wyrażenie lambda** reprezentuje implementację **interfejsu funkcyjnego.**&#x20;
 
+**Skłądnia lambdy**
+
+### (parametry) -> ciało
+
+**Przykład jedno parametrowy**&#x20;
+
+```
+x -> x * x
+```
+
+**Przykład dwu parametrowy**&#x20;
+
+```
+(a, b) -> a + b
+```
+
+**Z bloiem kodu (wielo linijkowy.**
+
+
+
+```
+```
 
 ### Interfejsy Funkcyjne
 
