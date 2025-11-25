@@ -9,4 +9,5 @@
 * [Wyjątki](wyjatki.md)
 * [Kolekcje](kolekcje.md)
 * [Interfejsy Funkcyjne i Lambda](interfejsy-funkcyjne-i-lambda.md)
+* [Obiekty Steam](obiekty-steam.md)
 * [Zadania dodatkowe](zadania-dodatkowe.md)
