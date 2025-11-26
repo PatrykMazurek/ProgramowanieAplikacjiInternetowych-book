@@ -155,7 +155,25 @@ public class Main{
 
 {% embed url="https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html" %}
 
+**Sortowanie**
 
+Przeanalizujmy poniższe przykłady sortowania, w tym celu została stworzona następująca lista
+
+```java
+List<String> strList = new ArrayList<String>();
+strList.add("A");
+strList.add("C");
+strList.add("B");
+strList.add("Z");
+strList.add("E");
+```
+
+Sorotwanie z wykorzystaniem obiektów Collection
+
+```java
+Collections.sort(strList);
+for(String str: strList) System.out.print(" "+str);
+```
 
 
 
