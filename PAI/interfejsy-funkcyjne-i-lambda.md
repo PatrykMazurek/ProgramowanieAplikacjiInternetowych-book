@@ -22,9 +22,10 @@ x -> x * x
 
 **Z bloiem kodu (wielo linijkowy.**
 
-
-
 ```
+(a, b) -> {
+    return a + b;
+}
 ```
 
 ### Interfejsy Funkcyjne
