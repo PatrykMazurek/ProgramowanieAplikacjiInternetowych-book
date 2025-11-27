@@ -168,11 +168,46 @@ strList.add("Z");
 strList.add("E");
 ```
 
-Sorotwanie z wykorzystaniem obiektów Collection
+W przypadku listy z obiektami np. String, int, duble możemy wykorzystać mechanizm sortowania z biblioteki `Collections`.
 
 ```java
 Collections.sort(strList);
 for(String str: strList) System.out.print(" "+str);
+```
+
+Przy bardziej złożonych obiektach, stworzonych przez nas  np. klasa Student
+
+```java
+class Student {
+    String imie;
+    int wiek;
+    // ... konstruktor, gettery, settery
+}
+```
+
+Możemy sortować po określonym parametrze, dla przykładu zaostał stworzona lista studentów
+
+```java
+List<Student> studentList= new ArrayList<Student>();
+strList.add(new Student("Jan", 23));
+strList.add(new Student("Tomek", 24));
+strList.add(new Student("Marta", 21));
+strList.add(new Student("Ewelina", 22));
+strList.add(new Student("Marek", 23));
+```
+
+Obiekt listy posiada wbudowaną metodę sortowania ale wymaga podania w jaki sposób sortować np. chcemy posortować po wieku studenta:
+
+```java
+studentList.sort((s1, s2) -> s1.getWiek() - s2.getWiek());
+```
+
+_Zasada działąnia._ Jeśli wynik jest ujemny -> `s1` jest mniejszy (idzie w lewo). Jeśli dodatni -> `s1` jest większy (idzie w prawo).
+
+W innym przypadku możemy posortować po alfabetycznie po imieniu.
+
+```java
+studentList.sort((s1, s2) -> s1.getImie().compareTo(s2.getImie()));
 ```
 
 
