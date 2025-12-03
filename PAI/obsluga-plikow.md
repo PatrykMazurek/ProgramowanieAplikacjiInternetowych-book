@@ -201,4 +201,4 @@ public class BufferedReaderExample {
 
 1.
 2. Napisz program, który znajduje w podanym katalogu wszystkie pliki większe niż 2048 bajtów i zapisuje listę ich ścieżek do pliku tekstowego `big_files.txt`.
-3.
+3. Napisz program, który stworzy coś w stylu dziennik użytkownika. Program ma pytać użytkownika o imię, zadawać pytanie w stylu "Jak minął dzień?" i zapisywać informacje pobrane od użytkownika  w formacie "`<data> | <użytkownik> |  <wiadomość>"` do pliku `dziennik.txt`, program ma sprawdzić czy plik istniej jeżeli tak to na końcu ma dopisać nową informację.&#x20;
