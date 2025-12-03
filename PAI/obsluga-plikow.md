@@ -193,12 +193,8 @@ public class BufferedReaderExample {
 
 ### Zadania
 
-
-
-
-
-
-
-1.
-2. Napisz program, który znajduje w podanym katalogu wszystkie pliki większe niż 2048 bajtów i zapisuje listę ich ścieżek do pliku tekstowego `big_files.txt`.
-3. Napisz program, który stworzy coś w stylu dziennik użytkownika. Program ma pytać użytkownika o imię, zadawać pytanie w stylu "Jak minął dzień?" i zapisywać informacje pobrane od użytkownika  w formacie "`<data> | <użytkownik> |  <wiadomość>"` do pliku `dziennik.txt`, program ma sprawdzić czy plik istniej jeżeli tak to na końcu ma dopisać nową informację.&#x20;
+1. Napisz program, który znajduje w podanym katalogu wszystkie pliki większe niż 2048 bajtów i zapisuje listę ich ścieżek do pliku tekstowego `big_files.txt`.
+2. Napisz program, który stworzy coś w stylu dziennik użytkownika. Program ma pytać użytkownika o imię, zadawać pytanie w stylu "Jak minął dzień?" i zapisywać informacje pobrane od użytkownika  w formacie "`<data> | <użytkownik> |  <wiadomość>"` do pliku `dziennik.txt`, program ma sprawdzić czy plik istniej jeżeli tak to na końcu ma dopisać nową informację.&#x20;
+3. Napisz program, który odczyta wybrany plik tekstowy i wyszuka określone słowa w tekście. W wyniku program powinien  wypisać całą linie, w której znalazł dane słowo.
+4. Napisz program, który pobierze od użytkowania ścieżkę do pliku, sprawdzi czy plik istnieje jeżeli nie to przewie działanie programu z odpowiednim komunikatem. Jeżeli plik będzie istniał to ma sprawdzić jego wielkość oraz ile linie tekstu znajduje się w pliku.
+5. Napisz program, który pobierze od użytkownika ścieżkę do pliku, sprawdzi czy plik istnieje jeżeli nie to go utworzy. Program powinien pobierać tekst od użytkownika i zapisywać do pliku w nowej linie do monomeru kiedy użytkownik nie poda pustej linii. Jeżeli poda pustą linie to ma zakończyć działanie.
