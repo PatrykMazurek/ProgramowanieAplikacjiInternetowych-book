@@ -198,3 +198,5 @@ public class BufferedReaderExample {
 3. Napisz program, który odczyta wybrany plik tekstowy i wyszuka określone słowa w tekście. W wyniku program powinien  wypisać całą linie, w której znalazł dane słowo.
 4. Napisz program, który pobierze od użytkowania ścieżkę do pliku, sprawdzi czy plik istnieje jeżeli nie to przewie działanie programu z odpowiednim komunikatem. Jeżeli plik będzie istniał to ma sprawdzić jego wielkość oraz ile linie tekstu znajduje się w pliku.
 5. Napisz program, który pobierze od użytkownika ścieżkę do pliku, sprawdzi czy plik istnieje jeżeli nie to go utworzy. Program powinien pobierać tekst od użytkownika i zapisywać do pliku w nowej linie do monomeru kiedy użytkownik nie poda pustej linii. Jeżeli poda pustą linie to ma zakończyć działanie.
+6. Stwórz program, który pobierze od użytkownika ścieżkę do pliku, następnie pobiera tekst i szyfruje go szyfrem Cezara, następnie zapisuje zaszyfrowany tekst do pliku. wartość przesunięcia zapisz na końcu pliku w kodzie szesnastkowym (heksagonalnym).&#x20;
+7. Stwórz program deszyfrujący dane zapisane w pliku z zadania 6.
