@@ -116,7 +116,7 @@ W powyższym przykładzie jeżeli plik nie zostanie usunięty to zostanie wywoł
 
 ### Odczyt i zapis do pliku
 
-obsług plików tekstowy
+**obsług plików tekstowy**
 
 **FileWrite** - Zapisuje dane do pliku z wykorzystaniem domyślnego kodowania systemowego, pozwala na zdefiniowanie czy dane mają nadpisane czy dopisane do pliku.&#x20;
 
@@ -174,7 +174,7 @@ public class FileReaderExample {
 }
 ```
 
-`BufferedReader` - najczęściej wykorzystywany z inną klasą odczytującą plik, pozwala na czytanie pliku po fragmentach np. linia po linii. metoda `readLine()`.&#x20;
+**BufferedReader** - najczęściej wykorzystywany z inną klasą odczytującą plik, pozwala na czytanie pliku po fragmentach np. linia po linii. metoda `readLine()`.&#x20;
 
 ```java
 public class BufferedReaderExample {
@@ -188,6 +188,63 @@ public class BufferedReaderExample {
             e.printStackTrace();
         }
     }
+}
+```
+
+**Obsługa plików binarnych**&#x20;
+
+**OutputStream** - strumień surowcach bajtów (0,1). Klasa przekazuje do pliku lub w inne miejse ciąć0 i1 bez zwracania uwagi na kodowanie np. UTF-8.&#x20;
+
+```java
+try (OutputStream out = new FileOutputStream("plik.bin")) {
+    out.write(65);                 // jeden bajt o wartości 65 (0x41, 'A' w ASCII)
+    out.write(new byte[]{1, 2, 3});
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
+**OutputStreamWriter** - Połączenie zwykłego tekstu (char / String) z zapisem do formatu binarnego z uwzględnieni odpowiedniego kodowania np. UTF-8.
+
+```java
+try (OutputStream out = new FileOutputStream("tekst.txt");
+     OutputStreamWriter writer = new OutputStreamWriter(out, StandardCharsets.UTF_8)) {
+
+    writer.write("Cześć UTF-8");
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
+**InputStream** - odczytywanie zawartości pliku/sieci w postaci bajtów&#x20;
+
+```java
+try (InputStream in = new FileInputStream("obrazek.jpg")) {
+    byte[] buffer = new byte[4096];
+    int bytesRead;
+    while ((bytesRead = in.read(buffer)) != -1) {
+        // tutaj coś robisz z danymi
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
+**InputStreamReader** - połączenie odczytywania bajtów z konwersją na tekst przy uwzględnieniu odpowiedniego kodowania np. UTF-8.&#x20;
+
+```java
+try (BufferedReader br = new BufferedReader(
+        new InputStreamReader(
+                new FileInputStream("tekst.txt"),
+                StandardCharsets.UTF_8
+        ))) {
+
+    String line;
+    while ((line = br.readLine()) != null) {
+        System.out.println(line);
+    }
+} catch (IOException e) {
+    e.printStackTrace();
 }
 ```
 
