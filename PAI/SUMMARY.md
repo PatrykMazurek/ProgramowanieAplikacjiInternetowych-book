@@ -14,3 +14,4 @@
 * [Spring Boot](spring-boot.md)
 * [spring JPA](lab-spring-databases.md)
 * [Zadania dodatkowe](zadania-dodatkowe.md)
+* [Spring MVC](spring-mvc.md)
