@@ -193,6 +193,3 @@ Oraz przykładowy plik z formularzem `person-form.html`
 {% embed url="https://www.thymeleaf.org/" %}
 
 {% embed url="https://www.javaguides.net/p/spring-mvc-tutorial.html" %}
-
-### Zadania
-
