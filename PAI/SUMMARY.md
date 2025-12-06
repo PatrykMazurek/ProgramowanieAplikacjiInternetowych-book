@@ -11,5 +11,6 @@
 * [Interfejsy Funkcyjne i Lambda](interfejsy-funkcyjne-i-lambda.md)
 * [Obiekty Steam](obiekty-steam.md)
 * [Obsługa plików](obsluga-plikow.md)
-* [Zadania dodatkowe](zadania-dodatkowe.md)
 * [Spring Boot](spring-boot.md)
+* [spring JPA](lab-spring-databases.md)
+* [Zadania dodatkowe](zadania-dodatkowe.md)
