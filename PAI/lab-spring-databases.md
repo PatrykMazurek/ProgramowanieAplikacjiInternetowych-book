@@ -1,4 +1,4 @@
-# Lab - Spring Databases
+# spring JPA
 
 ### Bazy danych
 
@@ -6,14 +6,14 @@ Framework Spring pozwala na korzystanie z różnych typów baz danych (SQL, NoSQ
 
 ### Spring JPA
 
-**Wymagane biblioteki**&#x20;
+**Wymagane biblioteki**
 
 * Spring Data JPA
 * MySql Driver
 
 Po dodaniu wymaganych bibliotek należy uzupełnić plik `application.properties` lub `application.yaml`
 
-**Konfiguracja połączenia**&#x20;
+**Konfiguracja połączenia**
 
 ```
 spring.datasource.url = jdbc:mysql://localhost:3306/usersDB?useSSL=false
@@ -68,7 +68,7 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 }
 ```
 
-Spring JPA automatycznie generuje podstawowe pytania, które odpowiadają za zapisywanie, odczytywanie, aktualizacja i usuwanie danych z bazy danych, bazując na obiektach &#x20;
+Spring JPA automatycznie generuje podstawowe pytania, które odpowiadają za zapisywanie, odczytywanie, aktualizacja i usuwanie danych z bazy danych, bazując na obiektach
 
 Spring JPA pozwala na pisanie niestandardowych zapytań do bazy danych w zależności od złożoności.
 
@@ -88,7 +88,7 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 }
 ```
 
-&#x20;**JPQL** - to obiektowy języ zapytań działający na encjach i polach obiektów a nie na tabeli w bazie danych
+**JPQL** - to obiektowy języ zapytań działający na encjach i polach obiektów a nie na tabeli w bazie danych
 
 ```java
 import com.example.database_example.model.Person;
@@ -151,13 +151,15 @@ public class PersonService {
 }
 ```
 
-W powyższym przykładzie przygotowana został klasa `PersonService`, która odpowiada za logikę działania z obiektami Person na bazie danych. Odwołanie do interfejsu `PersonRepository` pozwala na wykonanie takich operacji na bazie danych jak Create, Read, Update, Delete (CRUD). &#x20;
+W powyższym przykładzie przygotowana został klasa `PersonService`, która odpowiada za logikę działania z obiektami Person na bazie danych. Odwołanie do interfejsu `PersonRepository` pozwala na wykonanie takich operacji na bazie danych jak Create, Read, Update, Delete (CRUD).
 
-Pozostaje tylko wyświetlenie danych pobranych z bazy danych przez udostępnienie Rest API lub wyświetlenie na stronie internetowej.&#x20;
+Pozostaje tylko wyświetlenie danych pobranych z bazy danych przez udostępnienie Rest API lub wyświetlenie na stronie internetowej.
 
 **Materiały dodatkowe**
 
 {% embed url="https://usbwebserver.yura.mk.ua/#download" %}
+
+{% embed url="https://proteinshaikh.medium.com/common-spring-boot-and-hibernate-annotations-list-343a07894051" %}
 
 {% embed url="https://medium.com/@bshiramagond/jpa-with-spring-boot-a-comprehensive-guide-with-examples-e07da6f3d385" %}
 
