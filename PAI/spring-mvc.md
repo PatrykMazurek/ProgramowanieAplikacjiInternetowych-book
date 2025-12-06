@@ -105,5 +105,94 @@ Na początek warto dodać adnotację `@Controller` tak aby środowiskowa wiedzia
 
 **View**
 
-Widok odpowiada za część prezentacyjną w naszym projekcie, w przypadku aplikacji Spring Boot   pliki z widokiem domyślnie powinny znajdować się w katalogu resources\templates&#x20;
+Widok odpowiada za część prezentacyjną w naszym projekcie, w przypadku aplikacji Spring Boot pliki z widokiem domyślnie powinny znajdować się w katalogu `resources\templates`. Poniżej przedstawiam przykładowy plik widoku person-list.html.
+
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista Osób</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h1>Lista Osób</h1>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Miasto</th>
+                <th>Wiek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="p : ${peopleList}">
+                <td th:text="${p.firstName}">Imię</td>
+                <td th:text="${p.lastName}">Nazwisko</td>
+                <td th:text="${p.city}">Miasto</td>
+                <td th:text="${p.age}">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="/people/new" class="btn btn-primary">Dodaj nową osobę</a>
+</body>
+</html>
+```
+
+Powyższy przykład przedstawia wyświetlenie listy osób, która została przekazana z kontrolera. Na początek ważna adnotacja, która pozwala na zrozumienie odpowiednich atrybutów z `Thymeleaf`
+
+```html
+<html xmlns:th="http://www.thymeleaf.org">
+```
+
+Oraz przykładowy plik z formularzem `person-form.html`
+
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dodaj Osobę</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h1>Dodaj nową osobę</h1>
+
+    <form th:action="@{/people}" th:object="${person}" method="post">
+        
+        <div class="mb-3">
+            <label>Imię:</label>
+            <input type="text" th:field="*{firstName}" class="form-control" required/>
+        </div>
+
+        <div class="mb-3">
+            <label>Nazwisko:</label>
+            <input type="text" th:field="*{lastName}" class="form-control" required/>
+        </div>
+
+        <div class="mb-3">
+            <label>Miasto:</label>
+            <input type="text" th:field="*{city}" class="form-control" required/>
+        </div>
+
+        <div class="mb-3">
+            <label>Wiek:</label>
+            <input type="number" th:field="*{age}" class="form-control" required/>
+        </div>
+
+        <button type="submit" class="btn btn-success">Zapisz</button>
+        <a href="/people" class="btn btn-secondary">Anuluj</a>
+    </form>
+</body>
+</html>
+```
+
+### Dodatkowa literatura
+
+{% embed url="https://www.thymeleaf.org/" %}
+
+{% embed url="https://www.javaguides.net/p/spring-mvc-tutorial.html" %}
+
+### Zadania
 
